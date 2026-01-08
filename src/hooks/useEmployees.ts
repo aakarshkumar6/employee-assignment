@@ -27,9 +27,18 @@ export const useEmployees = () => {
   };
 
   const addEmployee = (data: EmployeeFormData) => {
+    // Find the maximum numeric ID and increment by 1
+    const maxId = employees.length > 0
+      ? Math.max(...employees.map(emp => {
+          const numId = parseInt(emp.id, 10);
+          return isNaN(numId) ? 0 : numId;
+        }))
+      : 0;
+    const newId = (maxId + 1).toString();
+    
     const newEmployee: Employee = {
       ...data,
-      id: Date.now().toString()
+      id: newId
     };
     const updated = [...employees, newEmployee];
     setEmployees(updated);
