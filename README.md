@@ -16,69 +16,36 @@ A modern, responsive employee management system built with React and TypeScript.
 
 ## Tech Stack
 
-### Core Technologies
-- **React 18.3.1** - Modern UI library for building user interfaces
-- **TypeScript 5.8.3** - Type-safe JavaScript for better development experience
-- **Vite 5.4.19** - Fast build tool and development server with HMR (Hot Module Replacement)
+- React, TypeScript, Vite
+- Tailwind CSS, shadcn/ui
+- React Router, React Hook Form, Zod
 
-### UI & Styling
-- **Tailwind CSS 3.4.17** - Utility-first CSS framework for rapid UI development
-- **shadcn/ui** - High-quality React component library built on Radix UI
-- **Radix UI** - Unstyled, accessible component primitives
-- **Lucide React** - Beautiful icon library
-- **tailwindcss-animate** - Animation utilities for Tailwind
-
-### Routing & State Management
-- **React Router DOM 6.30.1** - Client-side routing
-- **React Context API** - Global state management for authentication
-- **TanStack React Query 5.83.0** - Server state management (configured for future API integration)
-
-### Forms & Validation
-- **React Hook Form 7.61.1** - Performant form library with minimal re-renders
-- **Zod 3.25.76** - TypeScript-first schema validation
-- **@hookform/resolvers** - Validation resolver for React Hook Form
-
-### Additional Libraries
-- **date-fns 3.6.0** - Date utility library
-- **recharts 2.15.4** - Composable charting library (available for future use)
-- **sonner 1.7.4** - Toast notification library
-
-### Development Tools
-- **@vitejs/plugin-react-swc** - Fast React refresh using SWC
-- **ESLint** - Code linting and quality checks
-- **TypeScript ESLint** - TypeScript-specific linting rules
-- **PostCSS** - CSS processing
-- **Autoprefixer** - Automatic vendor prefixing
-
-## Steps to Run the Project Locally
+## Getting Started
 
 ### Prerequisites
 
-- **Node.js** (v18.0.0 or higher recommended)
-- **yarn** (v1.22.0 or higher)
-- A modern web browser (Chrome, Firefox, Safari, or Edge)
+- Node.js (v18.0.0 or higher)
+- yarn
 
-### Installation Steps
+### Installation
 
-1. **Clone the repository**
+1. Clone the repository
    ```bash
    git clone <repository-url>
-   cd employee-management
+   cd employee-assignment
    ```
 
-2. **Install dependencies**
+2. Install dependencies
    ```bash
    yarn install
    ```
 
-3. **Start the development server**
+3. Start the development server
    ```bash
    yarn dev
    ```
 
-4. **Access the application**
-   - Open your browser and navigate to `http://localhost:8080`
-   - The application will automatically open in your default browser
+4. Open your browser and navigate to `http://localhost:8080`
 
 ### Login Credentials
 
@@ -86,19 +53,10 @@ The application uses mock authentication. You can log in with:
 - **Email**: Any valid email address (e.g., `admin@company.com`)
 - **Password**: Any password with at least 4 characters (e.g., `1234`)
 
-### Building for Production
-
-To create a production build:
+### Build for Production
 
 ```bash
 yarn build
-```
-
-The optimized build will be created in the `dist` directory.
-
-To preview the production build:
-
-```bash
 yarn preview
 ```
 
@@ -141,3 +99,4 @@ yarn preview
 - The employee data model can be extended to include additional fields as needed
 - Print functionality can be enhanced with more formatting options
 - Image upload functionality is prepared but uses placeholder images from Unsplash
+
